@@ -1,0 +1,4 @@
+
+.clicked:hover {
+    -fx-cursor: hand;
+}

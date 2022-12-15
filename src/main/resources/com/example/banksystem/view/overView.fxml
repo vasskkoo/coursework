@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="725.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banksystem.controller.OverViewController">
+    <children>
+      <ImageView fitHeight="514.0" fitWidth="209.0" layoutX="-9.0">
+         <image>
+            <Image url="@../images/images_bg.jpg" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="514.0" prefWidth="198.0">
+         <children>
+            <Text fx:id="nameText" fill="#0d4646" strokeType="OUTSIDE" strokeWidth="0.0" text="Name Lastname" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" top="40.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="userIdText" fill="#0d4646" strokeType="OUTSIDE" strokeWidth="0.0" text="ID user" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" top="15.0" />
+               </VBox.margin>
+            </Text>
+            <Button fx:id="overviewButton" mnemonicParsing="false" style="-fx-background-color: null;" styleClass="clicked" text="Overview" textFill="#0d4646">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" top="40.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="chooseButton" mnemonicParsing="false" onAction="#chooseButtonOnAction" style="-fx-background-color: null;" styleClass="clicked" text="Choose credit " textFill="#0d4646">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" top="40.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutButtonOnButton" style="-fx-background-color: null;" styleClass="clicked" text="Log out" textFill="#0d4646">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" top="40.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <GridPane layoutX="200.0" prefHeight="514.0" prefWidth="526.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.39997100830078" minWidth="9.000005722045898" prefWidth="23.199935913085938" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="502.4000640869141" minWidth="10.0" prefWidth="502.4000640869141" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="178.00000610351563" minHeight="0.0" prefHeight="98.79998779296875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="178.00000610351563" minHeight="10.0" prefHeight="22.00001220703126" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="298.3999938964844" minHeight="10.0" prefHeight="77.80000610351561" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="298.3999938964844" minHeight="10.0" prefHeight="51.400000000000006" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="178.00000610351563" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="178.00000610351563" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="178.00000610351563" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="178.00000610351563" minHeight="0.0" prefHeight="22.00001220703126" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your credit" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Segoe UI" size="48.0" />
+               </font>
+            </Text>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Text fx:id="nameofbank" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Bank ">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="credit" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit ">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="mounthpay" strokeType="OUTSIDE" strokeWidth="0.0" text="Mounth pay">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="overpay" strokeType="OUTSIDE" strokeWidth="0.0" text="overpay">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <children>
+                  <Button fx:id="creditlinebutton" mnemonicParsing="false" onAction="#creditlineButtonOnAction" style="-fx-background-color: linear-gradient(to top right, #ff7f50, #6a5acd); -fx-background-radius: 90;" text="Add Creditline">
+                     <font>
+                        <Font name="Segoe UI Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="loadbutton" mnemonicParsing="false" onAction="#loadButtonOnAction" style="-fx-background-color: linear-gradient(to top right, #ff7f50, #6a5acd); -fx-background-radius: 90;" text="Load">
+                     <font>
+                        <Font name="Segoe UI Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>

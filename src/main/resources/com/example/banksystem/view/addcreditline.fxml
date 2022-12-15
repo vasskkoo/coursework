@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="180.0" prefWidth="451.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banksystem.controller.AddCreditLine">
+   <children>
+      <Text layoutX="171.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Creditline">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="entermounth" layoutX="151.0" layoutY="64.0" promptText="Enter add mounth" />
+      <Button fx:id="buutonback" layoutX="301.0" layoutY="141.0" mnemonicParsing="false" onAction="#closeButtonOnButton" style="-fx-background-color: linear-gradient(to top right, #ff7f50, #6a5acd); -fx-background-radius: 90;" text="back" textFill="#0b0b0b">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonapply" layoutX="372.0" layoutY="141.0" mnemonicParsing="false" onAction="#applyButtonOnButton" style="-fx-background-color: linear-gradient(to top right, #ff7f50, #6a5acd); -fx-background-radius: 90;" text="Apply">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
